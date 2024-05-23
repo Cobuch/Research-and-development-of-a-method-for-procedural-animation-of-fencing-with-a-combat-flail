@@ -10,6 +10,7 @@ Gif файлы ниже представляют пример результат
 - Удар по противнику со стороны ведущей руки.
 
 Данные Gif файлы демонстрируют пример работы только в зоне досягаемости. При выходе противника из зоны или нахождении слишком близко, алгоритм работать не будет.
+
 ![](https://github.com/Cobuch/Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail/blob/main/Text/Gif/FrontStrike.gif)
 ![](https://github.com/Cobuch/Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail/blob/main/Text/Gif/SideStrike1.gif)
 ![](https://github.com/Cobuch/Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail/blob/main/Text/Gif/SideStrike2.gif)
@@ -26,7 +27,8 @@ Gif файлы ниже представляют пример результат
 - Ассет BP_T, который является целью противником для анимируемого персонажа
 После чего необходимо запустить проект в режими симуляции (комбинация клавиш Alt+S). После этого начнётся работа решения и при передвижении противника в зону досягаемости, начнётся генерация анимации.
 ### Компоненты
-По умолчанию, у BP_NirCharacter включено отображение радиусов зон нахождения противников во время симуляции. Для их выключения, необходимо поменять флаг "Hidden In Game" в параметрах объектов "hit zone" и "no hit zone" в ассете BP_NirCharacter. 
+По умолчанию, у BP_NirCharacter включено отображение радиусов зон нахождения противников во время симуляции. Для их выключения, необходимо поменять флаг "Hidden In Game" в параметрах объектов "hit zone" и "no hit zone" в ассете BP_NirCharacter.
+
 ![](https://github.com/Cobuch/Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail/blob/main/Text/Gif/HitComp.png)
 
 # Доплнительно
