@@ -8,6 +8,7 @@ Gif файлы ниже представляют пример результат
 - Удар по противнику спереди;
 - Удар по противнику со стороны не ведущей руки;
 - Удар по противнику со стороны ведущей руки.
+
 Данные Gif файлы демонстрируют пример работы только в зоне досягаемости. При выходе противника из зоны или нахождении слишком близко, алгоритм работать не будет.
 ![](https://github.com/Cobuch/Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail/blob/main/Text/Gif/FrontStrike.gif)
 ![](https://github.com/Cobuch/Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail/blob/main/Text/Gif/SideStrike1.gif)
