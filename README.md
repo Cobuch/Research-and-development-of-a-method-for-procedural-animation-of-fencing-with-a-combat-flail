@@ -1,2 +1,34 @@
-# Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail
-This repository contains:  The technical solution of my final qualifying work and the text part of the work
+# Исследование и разработка метода процедурной анимации фехтования боевым цепом
+В данной работе представлен метод генерации процедурной анимации фехтования боевым цепом. Основной особенностью работы является использование различных параметров, которые влияют на анимацию. Генерация анимации подразумевает следующие этапы: получение заданых параметров в момент генерации, проверка дистанции до противника, расчет движений персонажа на основе параметров, генерация итоговой анимации.
+
+Проект является частью магистерской выпускной квалификационной работы по образовательной программе "Технологии разработки компьютерных игр" [Школы разработки видеоигр Университета ИТМО](https://itmo.games/). Вся работа написана при помощи системы визуального программирования Blueprint в игровом движке Ureal Engine 5.
+
+# Обзор
+Gif файлы ниже представляют пример результата работы решения. Для примера использовалось три позиции для нанесения удара:
+- Удар по противнику спереди;
+- Удар по противнику со стороны не ведущей руки;
+- Удар по противнику со стороны ведущей руки.
+Данные Gif файлы демонстрируют пример работы только в зоне досягаемости. При выходе противника из зоны или нахождении слишком близко, алгоритм работать не будет.
+![](https://github.com/Cobuch/Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail/blob/main/Text/Gif/FrontStrike.gif)
+![](https://github.com/Cobuch/Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail/blob/main/Text/Gif/SideStrike1.gif)
+![](https://github.com/Cobuch/Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail/blob/main/Text/Gif/SideStrike2.gif)
+
+# Запуск и использование
+## Запуск решения
+Работа является проектом, разработанным в Unreal Engine. Для запуска необходимо скачать репозиторий и установить Unreal Engine версии 5.1.1, после чего открыть проект можно двумя способами:
+- Через меню движка, запустив его через программу запуска Epic Games;
+- Открыть в проводнике проекта файл NIR.uproject, лежащий в корневой папке проекта.
+
+## Использование
+Для использования решения, необходимо  разместить на сцене следующие объекты:
+- Ассет BP_NirCharacter, который является анимруемым персонажем.
+- Ассет BP_T, который является целью противником для анимируемого персонажа
+После чего необходимо запустить проект в режими симуляции (комбинация клавиш Alt+S). После этого начнётся работа решения и при передвижении противника в зону досягаемости, начнётся генерация анимации.
+### Компоненты
+По умолчанию, у BP_NirCharacter включено отображение радиусов зон нахождения противников во время симуляции. Для их выключения, необходимо поменять флаг "Hidden In Game" в параметрах объектов "hit zone" и "no hit zone" в ассете BP_NirCharacter. 
+![](https://github.com/Cobuch/Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail/blob/main/Text/Gif/HitComp.png)
+
+# Доплнительно
+Автор: Левин Даниил
+
+Полный текст работы можно найти на [GitHub](https://github.com/Cobuch/Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail/blob/main/Text/Research-and-development-of-a-method-for-procedural-animation-of-fencing-with-a-combat-flail.pdf)
